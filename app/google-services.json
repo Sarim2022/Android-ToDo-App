@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "216167972536",
+    "project_id": "cleantask-79053",
+    "storage_bucket": "cleantask-79053.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216167972536:android:15355c31433bac8189be4d",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216167972536-uluhdk9g7592i7t20qr0uj645fcstbio.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "c31879640251afe3201c4aa6569c5d62edfd67f1"
+          }
+        },
+        {
+          "client_id": "216167972536-uh21ao9aj2d3frbbcclp8jmpqsv0n7lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC04f4wRpA9BkRVnLx8V0I732ChiJgzqAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216167972536-uh21ao9aj2d3frbbcclp8jmpqsv0n7lu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

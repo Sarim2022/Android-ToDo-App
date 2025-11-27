@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_dialog_white"
+    android:padding="24dp">
+
+   <ImageButton
+       android:id="@+id/btn_close_dialog"
+       android:layout_width="22dp"
+       android:layout_height="22dp"
+       android:background="@drawable/close"
+       android:contentDescription="Close"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"/>
+
+   <TextView
+       android:id="@+id/label_todo"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="To-do"
+       android:textColor="#757575"
+       android:textSize="14sp"
+       android:layout_marginTop="8dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <EditText
+       android:id="@+id/et_task_title_full"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:hint="Pay for utility services"
+       android:inputType="textCapSentences"
+       android:textColor="#000000"
+       android:textColorHint="#ADA8A8"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:background="@android:color/transparent"
+       app:layout_constraintEnd_toStartOf="@id/btn_close_dialog"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/label_todo"
+       android:layout_marginEnd="16dp" />
+
+   <View
+       android:id="@+id/separator_1"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="#EEEEEE"
+       android:layout_marginTop="16dp"
+       app:layout_constraintTop_toBottomOf="@id/et_task_title_full"/>
+
+   <TextView
+       android:id="@+id/label_priority"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Priority"
+       android:textColor="#757575"
+       android:textSize="14sp"
+       android:layout_marginTop="16dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/separator_1" />
+
+   <TextView
+       android:id="@+id/tv_priority_selected"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Low"
+       android:textColor="#000000"
+       android:textColorHint="#ADA8A8"
+       android:textSize="16sp"
+       android:paddingTop="8dp"
+       android:paddingBottom="8dp"
+
+       app:layout_constraintTop_toBottomOf="@id/label_priority"/>
+
+   <View
+       android:id="@+id/separator_2"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="#EEEEEE"
+       app:layout_constraintTop_toBottomOf="@id/tv_priority_selected"/>
+
+   <TextView
+       android:id="@+id/label_tags"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Add description in Tags"
+       android:textColor="#757575"
+       android:textSize="14sp"
+       android:layout_marginTop="16dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/separator_2" />
+
+   <TextView
+       android:id="@+id/tv_add_tags"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Add description"
+       android:textColor="#1A73E8"
+       android:textSize="16sp"
+       android:drawablePadding="4dp"
+       android:layout_marginTop="8dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/label_tags" />
+
+   <View
+       android:id="@+id/separator_3"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="#EEEEEE"
+       android:layout_marginTop="16dp"
+       app:layout_constraintTop_toBottomOf="@id/tv_add_tags"/>
+
+   <TextView
+       android:id="@+id/label_deadline"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Select Deadline"
+       android:textColor="#757575"
+       android:textSize="14sp"
+       android:layout_marginTop="16dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/separator_3" />
+
+   <TextView
+       android:id="@+id/tv_deadline_selected"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Today"
+       android:textColor="#212121"
+       android:textSize="16sp"
+       android:paddingTop="12dp"
+       android:paddingBottom="12dp"
+       android:drawablePadding="8dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/label_deadline" />
+
+   <Button
+       android:id="@+id/btn_done"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Done"
+       android:textColor="@android:color/white"
+       android:backgroundTint="#1A73E8"
+       android:padding="16dp"
+       android:layout_marginTop="32dp"
+       app:layout_constraintTop_toBottomOf="@id/tv_deadline_selected"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
