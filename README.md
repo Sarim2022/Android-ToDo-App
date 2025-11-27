@@ -18,6 +18,6 @@ A simple and robust To-Do List application built with Kotlin and integrated with
 
 You can download the latest stable version of the app directly from our GitHub Releases page.
 
-**[Download Latest APK Here]** (Link will be added in the next step)
+**[Download Latest APK Here]** (https://github.com/Sarim2022/Android-ToDo-App/releases/download/v1.0.0/app-debug.apk)
 
 ***Note:*** *This app requires an internet connection to use Firebase services.*
